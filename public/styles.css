@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&family=Poppins:wght@300&display=swap');
+
+body{
+    font-family: 'Patua One', cursive;
+    background-color: #041562;
+}
+
+#seleccionar-mascota{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo{
+    font-size: 32px;
+    color: white;
+
+}
+
+.subtitulo{
+    font-size: 20px;
+    color: white;
+}
+
+.tarjetas{
+    display: flex;
+    gap: 10px;
+}
+
+.tarjeta-de-mokepon{
+    width: 200px;
+    height: 100px;
+    background: #11468F;
+    padding: 12px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.tarjeta-de-mokepon img{
+    width: 80px;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    background-color: greenyellow;
+}
+
+.boton-seleccionar-mascota{
+    width: 180px;
+    height: 40px;
+    background: transparent;
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 20px;
+    color: white;
+    margin-top: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#seleccionar-ataque{
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-de-ataque{
+    width: 80px;
+    background-color: #11468F;
+    padding: 12px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-color: transparent;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 4px;
+}
+
+#mensajes{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 190px;
+    background: #EEEEEE;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+#boton-reiniciar{
+    border: none;
+    color: #11468F;
+    font-family: 'Poppins', sans-serif;
+}
+
+.ataques{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    text-align: center;
+    color: #EEEEEE;
+}
+
+#vidas-propias, #vidas-enemigo{
+    font-size: 32px;
+    margin-bottom: 0;
+    color: #EEEEEE;
+}
+
+@media(max-width: 590px){
+    .tarjetas{
+        flex-direction: column;
+    }
+    .boton-de-ataque{
+        display:flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+    #ver-mapa div{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+#ver-mapa{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ver-mapa button{
+    user-select: none;
+    width: 80px;
+    height: 40px;
+    background: transparent;
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 20px;
+    color: white;
+    margin: 4px 0;
+    font-family: 'Poppins', sans-serif;
+}
